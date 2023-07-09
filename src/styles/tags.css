@@ -1,0 +1,46 @@
+@keyframes tag-hover {
+  100% {
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #fff;
+  }
+}
+
+.tag {
+  @apply inline-block px-4 py-2 mr-2 mb-2 text-xs font-bold rounded lowercase text-white;
+  border: 1px solid transparent;
+}
+
+.tag:hover {
+  animation: tag-hover 500ms both;
+}
+
+.tag:before {
+  content: "#";
+}
+
+.tag.ASO {
+  background-color: #d1d100;
+}
+
+.tag.IAW {
+  background-color: lightblue;
+}
+
+.tag.SRI {
+  background-color: #ffa51a;
+}
+
+.tag.HLC {
+  background-color: #00800c;
+
+}
+
+.tag.SAD {
+  background-color: #35e345;
+
+}
+
+.tag.GBD {
+  background-color: #5900e1;
+}
